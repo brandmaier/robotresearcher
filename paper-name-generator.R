@@ -43,7 +43,20 @@ titles <- c(
 "Is <X> always beneficial? <Y> as a moderator.",
 "<X> and <Y>:  A multifoci theoretical extension.",
 "How and when <X> influences <Y>.",
-"Interpreting relationships between <X> and <Y>."
+"Interpreting relationships between <X> and <Y>.",
+"Drivers of <X>: <Y> and <Z>.",
+"From <X> to <Y>.",
+"Using <X> and <Y> to predict <Z>.",
+"Patterns and sources of <X> and <Y> in old age.",
+"Costs and benefits of <X>. Why <Y> matters.",
+"Self-reports of <X> and <Y>: Evidence for differential assessment.",
+"<X>, <Y>, and <Z>: Evidence of cross-domain buffering effects",
+"An integrated model of <X>, <Y>, and <Z>.",
+"Gender differences in <X> and <Y>.",
+"Beyond <X>: Influences of <Y> on <Z>.",
+"The role of <X> in prediction of <Y>.",
+"The relationship of <X> and <Y>. A preliminary empirical model.",
+"The role of <X> on <Y>. A dyadic perspective."
 )
 
 terms <- c("false-memory formation", "environmental radioactivity", "emotional valence", "scientific success",
