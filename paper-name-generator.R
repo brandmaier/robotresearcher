@@ -49,18 +49,28 @@ titles <- c(
 terms <- c("false-memory formation", "environmental radioactivity", "emotional valence", "scientific success",
         "existential crisis", "nihilistic feeling", "globalization", "mathematical anxiety",
        "unwanted memory", "early marriage", "generosity", "midlife crisis", "canteen food consumption",
-       "mobile phone use", "time until remarriage", "narcissm", "city pollution", "paranormal activity",
+       "mobile phone use", "time until remarriage", "narcissism", "city pollution", "paranormal activity",
        "extrasensory perception", "gravitational theory", "the Oedipus complex", "climate change denial",
        "hypnosis treatment", "cat food consumption","work-family conflict","time allocation at work",
        "emotional exhaustion", "hand hygiene", "sleep quality","masculinity of smokers",
        "the aging brain","body modification","competition","complaining behavior",
        "the concept of self","emotional intelligence","humor","sadism","subliminal advertising",
        "visual perception","optimism","subjective well-being","cognitive development","peer pressure",
-       "gambling","guilt","smoking cessation","sibling rivalry","birth order")
+       "gambling","guilt","smoking cessation","sibling rivalry","birth order",
+	   "egotistic admiration", "pursuit of gratification", "healthy self-love","egocentrism",
+	   "normal development", "sexual narcissism", "social networking", "selfishness",
+	   "agressive drive", "omnipotence", "self-enhancement", "oral fixation", "shame",
+	   "guilt","anger","exhibitionism","pathological lying", "lack of empathy", "lack of guilt",
+	   "antisocial behavior", "paranoia","mutual intimacy")
+	   
+tags <- c("#futurescience", "#researchproposal","#proposal","#psych","#psychresearch",
+		"#fundraising","#letsdoit")
 
 rndstr <- function(titles, num=1) {
   titles[sample(1:length(titles),num)]
 }
+
+tag <- sample(tags,1)
 
 # random title
 title <- rndstr(titles)
@@ -85,6 +95,6 @@ require("twitteR")
 load("api.Rdata")
 
 setup_twitter_oauth(apikey, apisecret, token, tokensecret)
-tweet(paste(title, "#futurescience"))
+tweet(paste(title, tag))
 
 cat(title)
